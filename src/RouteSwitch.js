@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, HashRouter, Route, Routes } from 'react-router-dom';
 import NavBar from './components/NavBar';
 import App from './App';
 import Cart from './components/Cart';
@@ -55,12 +55,12 @@ const RouteSwitch = () => {
 
   return (
     <div className="main-div">
-      <BrowserRouter>
+      <HashRouter basename={process.env.PUBLIC_URL}>
         <NavBar added={cartNumber} />
         <Routes>
-          <Route path="/shopping-cart/" element={<HomePage />} />
+          <Route path="/" element={<HomePage />} />
           <Route
-            path="/shopping-cart/shop"
+            path="/shop"
             element={
               <App
                 array={array}
@@ -70,7 +70,7 @@ const RouteSwitch = () => {
             }
           />
           <Route
-            path="/shopping-cart/cart"
+            path="/cart"
             element={
               <Cart
                 cartArray={cartArray}
@@ -80,7 +80,7 @@ const RouteSwitch = () => {
             }
           />
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 };

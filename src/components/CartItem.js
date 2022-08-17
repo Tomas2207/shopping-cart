@@ -47,7 +47,7 @@ const CartItem = (props) => {
           className="delete-btn"
           onClick={() => props.deleteItem(props.item.index)}
         >
-          <img src="../img/icons/trash.png" alt="" className="delete-img" />
+          <img src="img/icons/trash.png" alt="" className="delete-img" />
         </button>
       </div>
     </div>

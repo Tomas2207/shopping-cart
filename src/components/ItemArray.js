@@ -2,7 +2,7 @@ const items = [
   {
     name: 'Lenovo - 2022 - IdeaPad Flex 5',
     price: '1200.56',
-    photo: '../img/lenovo.jpg',
+    photo: 'img/lenovo.jpg',
     keys: 0,
     index: 0,
     quantity: 1,
@@ -18,7 +18,7 @@ const items = [
   {
     name: 'Apple iPhone 13',
     price: '959.99',
-    photo: '../img/phone.jpg',
+    photo: 'img/phone.jpg',
     keys: 1,
     index: 1,
     quantity: 1,
@@ -34,7 +34,7 @@ const items = [
   {
     name: 'TCL 75-inch 6-Series 4K UHD Dolby Vision HDR QLED Roku Smart TV',
     price: '2299.00',
-    photo: '../img/tv1.jpg',
+    photo: 'img/tv1.jpg',
     keys: 2,
     index: 2,
     quantity: 1,
@@ -50,7 +50,7 @@ const items = [
   {
     name: 'Playstation 5 Console',
     price: '499.99',
-    photo: '../img/ps5.jpg',
+    photo: 'img/ps5.jpg',
     keys: 3,
     index: 3,
     quantity: 1,
@@ -65,7 +65,7 @@ const items = [
   {
     name: 'LG 27GP950-B 27” Ultragear UHD (3840 x 2160) Nano IPS Gaming Monitor 144Hz',
     price: '799.00',
-    photo: '../img/monitor.jpg',
+    photo: 'img/monitor.jpg',
     keys: 4,
     index: 4,
     quantity: 1,
@@ -83,7 +83,7 @@ const items = [
   {
     name: 'Ibanez Artcore Series AF75G Hollowbody Electric Guitar Flat Black',
     price: '659.89',
-    photo: '../img/guitar.jpg',
+    photo: 'img/guitar.jpg',
     keys: 5,
     index: 5,
     quantity: 1,
@@ -99,7 +99,7 @@ const items = [
   {
     name: 'DXRacer PC Gaming Chair Racing Style Office Computer Seat',
     price: '329.00',
-    photo: '../img/gaming-chair.jpg',
+    photo: 'img/gaming-chair.jpg',
     keys: 6,
     index: 6,
     quantity: 1,
@@ -113,7 +113,7 @@ const items = [
   {
     name: 'Xbox One Controller',
     price: '60.99',
-    photo: '../img/controller.jpg',
+    photo: 'img/controller.jpg',
     keys: 7,
     index: 7,
     quantity: 1,
@@ -130,7 +130,7 @@ const items = [
   {
     name: 'HyperX Cloud II - Gaming Headset, 7.1',
     price: '110.66',
-    photo: '../img/headset.jpg',
+    photo: 'img/headset.jpg',
     keys: 8,
     index: 8,
     quantity: 1,
@@ -149,7 +149,7 @@ const items = [
   {
     name: 'Thermaltake Glacier 360 Liquid-Cooled PC ',
     price: '1499.99',
-    photo: '../img/pc.jpg',
+    photo: 'img/pc.jpg',
     keys: 9,
     index: 9,
     quantity: 1,
