@@ -1,0 +1,183 @@
+.itemContainer {
+  display: flex;
+  min-height: 100px;
+  align-items: center;
+  margin: 10px;
+  border-top: 1px solid rgba(128, 128, 128, 0.411);
+  border-bottom: 1px solid rgba(128, 128, 128, 0.411);
+  padding: 10px;
+  width: 700px;
+  justify-content: center;
+  gap: 10px;
+  min-width: 290px;
+  /* overflow: hidden; */
+}
+
+.cart-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.c-item {
+  display: flex;
+  justify-content: center;
+}
+
+h2 {
+  /* background-color: rgb(81, 133, 153); */
+  background-color: black;
+  color: white;
+  margin: 0;
+  padding: 20px;
+  font-weight: 400;
+}
+
+.cart-image,
+.cart-description,
+.cart-price {
+  width: 20%;
+  /* border: 1px solid gray; */
+  height: 100%;
+  min-width: 20px;
+  display: flex;
+  align-items: center;
+  margin: 0 5px;
+  border-radius: 5px;
+  justify-content: center;
+}
+
+.cart-image {
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.total {
+  width: 30%;
+  min-width: 300px;
+  border: 1px solid gray;
+  text-align: end;
+  border-radius: 5px;
+  margin: 0 10px;
+  padding: 30px 46px;
+  box-sizing: border-box;
+  font-size: 1.1em;
+  margin-bottom: 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.delete-btn {
+  padding: 5px 5px;
+  border: 1px solid black;
+  right: 10px;
+  bottom: 5px;
+  /* background-color: rgb(211, 26, 26); */
+  background-color: black;
+  color: white;
+  font-size: 1.2em;
+  border-radius: 5px;
+  display: flex;
+}
+
+.delete-btn:hover,
+.purchase-btn {
+  cursor: pointer;
+  background-color: rgb(44, 42, 42);
+}
+
+.delete-img {
+  width: 25px;
+}
+
+.no-items {
+  padding: 100px;
+  border: 1px solid rgba(128, 128, 128, 0.445);
+  width: 30%;
+  margin: 10px 10px;
+  border-radius: 5px;
+  font-size: 1.5em;
+  color: rgba(128, 128, 128, 0.753);
+  text-align: center;
+}
+
+.purchase-btn {
+  padding: 5px 10px;
+  border: 1px solid black;
+  margin-top: 15px;
+  background-color: black;
+  color: white;
+  font-size: 1.2em;
+  border-radius: 5px;
+}
+
+input {
+  height: 30px;
+  width: 40px;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.cImg {
+  width: 60%;
+}
+
+.c-names {
+  display: flex;
+  justify-content: center;
+  gap: 5%;
+  font-size: 1.1em;
+  margin-top: 10px;
+}
+
+.loading {
+  background-image: url('../public/img/icons/giphy.gif');
+  padding: 25px;
+  background-position: center;
+  background-size: contain;
+}
+
+@media only screen and (max-width: 750px) {
+  .itemContainer {
+    max-width: 420px;
+    gap: 20px;
+    font-size: 1em;
+    margin: 10px 0;
+  }
+  h1 {
+    font-size: 2.1em;
+  }
+
+  .total {
+    margin: 0;
+    padding: 25px;
+    box-sizing: border-box;
+    max-width: 220px;
+    font-size: 1em;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .itemContainer {
+    max-width: 120px;
+    gap: 5px;
+    font-size: 0.8em;
+    margin: 10px 0;
+  }
+  h1 {
+    font-size: 2.1em;
+  }
+
+  .total {
+    margin: 0;
+    padding: 5px;
+    box-sizing: border-box;
+    max-width: 220px;
+    font-size: 0.9em;
+  }
+}

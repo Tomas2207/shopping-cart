@@ -1,0 +1,105 @@
+.home {
+  height: 100%;
+  display: grid;
+
+  transition: 1s;
+  overflow: hidden;
+}
+
+/* .background {
+  background-size: 100%;
+} */
+
+.background-img {
+  width: 100%;
+  height: 100%;
+  background: url('../public/img/background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  background-color: rgb(228, 226, 226);
+  background-position: center;
+  transition: 0.8s;
+  overflow: hidden;
+}
+
+.home:hover .background-img,
+.home:focus .background-img {
+  transform: scale(1.2);
+  overflow: hidden;
+}
+
+.home:hover {
+  /* transform: scale(1.1); */
+  overflow: hidden;
+}
+
+.home-title,
+.home-description {
+  background-color: rgba(61, 55, 55, 0.781);
+  color: white;
+  width: 45%;
+  min-width: 290px;
+  height: 25%;
+  border-radius: 3px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+}
+
+.home-title {
+  position: absolute;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+
+  top: 25%;
+  left: 5%;
+}
+
+.title-span {
+  font-size: 1.5em;
+  margin-left: 25px;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.desc-span {
+  margin-left: 35px;
+}
+
+.home-btn {
+  bottom: 10px;
+  left: 30%;
+  border: 1px solid black;
+  background-color: black;
+  color: red;
+  border-radius: 2px;
+  display: flex;
+  margin-bottom: 15px;
+  margin: 0 auto;
+  box-shadow: 5px 5px 0px gray;
+}
+
+.home-btn:hover {
+  cursor: pointer;
+  box-shadow: 5px 5px 0px rgb(204, 201, 201);
+}
+
+.link-products {
+  text-decoration: none;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: white;
+  padding: 15px 25px;
+}
+
+@media only screen and (max-width: 750px) {
+  .home-title {
+    padding: 50px 0;
+    left: 5px;
+  }
+}
