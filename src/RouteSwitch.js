@@ -55,12 +55,12 @@ const RouteSwitch = () => {
 
   return (
     <div className="main-div">
-      <HashRouter basename={process.env.PUBLIC_URL}>
+      <BrowserRouter>
         <NavBar added={cartNumber} />
         <Routes>
-          <Route path="/" element={<HomePage />} />
+          <Route exact path="/shopping-cart/" element={<HomePage />} />
           <Route
-            path="/shop"
+            path="/shopping-cart/shop"
             element={
               <App
                 array={array}
@@ -70,7 +70,7 @@ const RouteSwitch = () => {
             }
           />
           <Route
-            path="/cart"
+            path="/shopping-cart/cart"
             element={
               <Cart
                 cartArray={cartArray}
@@ -80,7 +80,7 @@ const RouteSwitch = () => {
             }
           />
         </Routes>
-      </HashRouter>
+      </BrowserRouter>
     </div>
   );
 };
